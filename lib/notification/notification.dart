@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:timezone/data/latest_all.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
+import 'package:get_storage/get_storage.dart';
 
 Future todoNotification(int id, String notiTitle, String notiDesc) async {
   //todo의 타이머 시간이 종료되면 알림이 울림. 해당 알림은 고유한 id가 필요하므로 todo의
